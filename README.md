@@ -45,3 +45,9 @@ In the second example, it takes a reviewer to go up to the `MyScreen` component 
 
 ## Factor out components
 Don't let components be more than 3 indents deep. Factor them out so they're named and easier to read.
+
+## Cross-platform TextInput custom font family
+```
+fontFamily: MY_FONT_FAMILY,
+fontWeight: Platform.select({ ios: null, android: "100" }), // "100" should be any weight not equal to fontFamily's native weight
+```
