@@ -42,3 +42,6 @@ const MyScreen = (props) => {
 ```
 
 In the second example, it takes a reviewer to go up to the `MyScreen` component before understanding why the `componentId` prop is being passed. Whereas in the first example, it's made more clear that the container just wants to give the subcomponents a way to navigate. Presentational components don't need to know about other components, states, or navigation. They're only concerned with receiving some data, and being able to display that data in a nice way.
+
+## Factor out components
+Don't let components be more than 3 indents deep. Factor them out so they're named and easier to read.
