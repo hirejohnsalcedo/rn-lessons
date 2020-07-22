@@ -51,3 +51,8 @@ Don't let components be more than 3 indents deep. Factor them out so they're nam
 fontFamily: MY_FONT_FAMILY,
 fontWeight: Platform.select({ ios: null, android: "100" }), // "100" should be any weight not equal to fontFamily's native weight
 ```
+
+## Are you reviewing regarding style?
+- Yes. Is it something fixable automatically by static code checking tools like prettier/lint?
+  - Yes. Ok, let's add a rule so it gets automatically fixed
+  - No. If it bothers you that much, change it yourself
