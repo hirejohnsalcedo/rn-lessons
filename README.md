@@ -10,6 +10,14 @@
 ## Nullish Coalescing Operator usage
 Do not use the nullish coalescing operator `??`, when the falsy left-side expression should not be evaluated to `0` or `""`. (tags: avoiding unintended outcomes )
 
+Even if the left-side expression is guaranteed to never be `0` or `""`
+
+Given `someProp={myData ?? defaultValue}`
+
+If `someProp` expects `typeof defaultValue`
+
+There's no reason to prefer `??` instead of `||`
+
 ## Separation of concerns
 Do not pass down implementation details from containers to screens or subcomponents (e.g. `componentId` ) if it can be defined at the container level. This improves readability and exposes intentionality when passing down props from the container. (tags: readability, segregation of responsibility)
 
