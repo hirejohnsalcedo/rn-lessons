@@ -64,3 +64,8 @@ fontWeight: Platform.select({ ios: null, android: "100" }), // "100" should be a
 - Yes. Is it something fixable automatically by static code checking tools like prettier/lint?
   - Yes. Ok, let's add a rule so it gets automatically fixed
   - No. If it bothers you that much, change it yourself
+
+## Pass implicitly typed static props
+```
+export const MyComponent = Object.assign(_MyComponent, { MY_STATIC_PROP });
+```
